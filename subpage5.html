@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLLI Archive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+            background: white;
+            margin: 30px;
+        }
+        .logo img{
+            height: 60px;
+        }
+        
+        .topnav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .topnav a {
+            color: #1fa0cf;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 5px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .des{
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            margin: 30px;
+        }
+        .des span{
+            color: #1fa0cf;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .des img{
+            float: left;
+            width: 150px;
+            height: 150px;
+        }
+        .des h4{
+            color: #888888;
+            font-family: "Arial";
+        }
+        .music-letter-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: stretch;
+            position: relative;
+        }
+
+        .receiver-sender {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .receiver-sender.right {
+            justify-content: flex-end;
+        }
+
+        .receiver,
+        .sender,
+        .music-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .music-input,
+        .letter-text {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .letter-text {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+         select {
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            background-color: #1fa0cf;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d8ecf;
+        }
+
+        textarea {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .center, .rightcolumn, .left, .right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg"></a>
+        </div>
+        <div class="topnav">
+            <a href="subpage1.html">상황</a>
+            <a href="subpage2.html">날씨</a>
+            <a href="subpage3.html">감정</a>
+            <a href="subpage4.html">추천하기</a>
+            <a href="subpage5.html">음악편지</a>
+        </div>
+    </div>
+    <div class="des">
+        <h1>💌 음악편지</h1>
+        <h5>음악으로 마음을 전달해보세요.</h5>
+    </div>
+    <div class="des">
+        <form action="">
+        <div class="music-letter-box">
+            <div class="receiver-sender">
+                <input type="text" placeholder="To. 수신인" class="receiver">
+            </div>
+            <input type="text" placeholder="🎵 추천하는 음악 제목 또는 링크" class="music-input">
+            <textarea rows="5" placeholder="함께 전달하고 싶은 글을 적어주세요." class="letter-text"></textarea>
+            <div class="receiver-sender right">
+                <input type="text" placeholder="From. 발신인" class="sender">
+            </div>
+            <button type="submit">음악편지 보내기</button>
+                </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h5>Copyright by PLLI Archive All Rights Reserved.</h5>
+    </div>
+</body>
+</html>

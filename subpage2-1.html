@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLLI Archive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+            background: white;
+            margin: 30px;
+        }
+        .logo img{
+            height: 60px;
+        }
+        
+        .topnav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .topnav a {
+            color: #1fa0cf;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 5px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .des{
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            margin: 30px;
+        }
+        .des span{
+            color: #1fa0cf;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .des img{
+            float: left;
+            width: 150px;
+            height: 150px;
+        }
+        .des h4{
+            color: #888888;
+            font-family: "Arial";
+        }
+
+        .song-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 40px;
+        }
+
+        .song-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .song-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 150px;
+        }
+
+        .song-title {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .song-meta {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .song-votes {
+            flex: 0 0 200px;
+            background-color: #e6f4ff;
+            padding: 10px;
+            height: 150px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #1fa0cf;
+            font-weight: bold;
+        }
+        button {
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            background-color: #1fa0cf;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d8ecf;
+        }
+
+        textarea {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .center, .rightcolumn, .left, .right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg"></a>
+        </div>
+        <div class="topnav">
+            <a href="subpage1.html">상황</a>
+            <a href="subpage2.html">날씨</a>
+            <a href="subpage3.html">감정</a>
+            <a href="subpage4.html">추천하기</a>
+            <a href="subpage5.html">음악편지</a>
+        </div>
+    </div>
+    <div class="topnav">
+            <a href="subpage2.html">비 오는 날</a>
+            <a href="subpage2-1.html">맑은 날</a>
+            <a href="subpage2-2.html">눈 오는 날</a>
+        </div>
+    <div class="des">
+        <h1>맑은 날</h1>
+        <h5>햇살 가득한 날, 기분을 더 좋게 만들어줄 선곡!</h5>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <img src="idome.jpg" class="song-image">
+        </div>
+
+        
+        <div class="song-info">
+            <div class="song-title">I DO ME </div>
+            <div class="song-meta">KiiiKiii (키키)  |  UNCUT GEM</div>
+        </div>
+
+        
+        <div class="song-votes"><a href="#">❤️</a> 324</div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <img src="niceguy.jpg" class="song-image">
+        </div>
+
+        
+        <div class="song-info">
+            <div class="song-title">Nice Guy</div>
+            <div class="song-meta">BOYNEXTDOOR  |  19.99</div>
+        </div>
+
+        
+        <div class="song-votes"><a href="#">❤️</a> 909</div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <img src="sticky.jpg" class="song-image">
+        </div>
+
+        
+        <div class="song-info">
+            <div class="song-title">Sticky</div>
+            <div class="song-meta">KISS OF LIFE  |  Sticky</div>
+        </div>
+
+        
+        <div class="song-votes"><a href="#">❤️</a> 701</div>
+    </div>
+
+    <div class="des">
+        <h2>🎵 [맑은 날] 플리에 추가하고 싶은 곡은? </h2>
+        <h4> 노래 - 가수 형태로 입력해주세요. </h4>
+        <form action="">
+            <textarea cols="120" rows="5"></textarea><br>
+            <button type="submit">입력</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h5>Copyright by PLLI Archive All Rights Reserved.</h5>
+    </div>
+</body>
+</html>

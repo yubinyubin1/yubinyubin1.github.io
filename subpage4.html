@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLLI Archive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+            background: white;
+            margin: 30px;
+        }
+        .logo img{
+            height: 60px;
+        }
+        
+        .topnav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .topnav a {
+            color: #1fa0cf;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 5px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .des{
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            margin: 30px;
+        }
+        .des span{
+            color: #1fa0cf;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .des img{
+            float: left;
+            width: 150px;
+            height: 150px;
+        }
+        .des h4{
+            color: #888888;
+            font-family: "Arial";
+        }
+
+        .song-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 40px;
+        }
+
+        .song-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .song-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 150px;
+        }
+
+        .song-title {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .song-meta {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .song-votes {
+            flex: 0 0 600px;
+            background-color: #e6f4ff;
+            padding: 10px;
+            height: 150px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #000000;
+            font-family: "맑은 고딕";
+        }
+         
+        button {
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            background-color: #1fa0cf;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d8ecf;
+        }
+
+        textarea {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .center, .rightcolumn, .left, .right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg"></a>
+        </div>
+        <div class="topnav">
+            <a href="subpage1.html">상황</a>
+            <a href="subpage2.html">날씨</a>
+            <a href="subpage3.html">감정</a>
+            <a href="subpage4.html">추천하기</a>
+            <a href="subpage5.html">음악편지</a>
+        </div>
+    </div>
+     <div class="topnav">
+            <a href="subpage4.html">🎵 오늘의 추천곡</a>
+            <a href="subpage4-1.html">카테고리 추천</a>
+        </div>
+    <div class="des">
+        <h1>🎵 오늘의 추천곡</h1>
+        <h5>오늘 당신의 귀를 사로잡은 바로 그 곡을 모두에게 공유해주세요!</h5>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <img src="horizon.jpg" class="song-image">
+        </div>
+
+        
+        <div class="song-info">
+            <div class="song-title">Horizon </div>
+            <div class="song-meta">재현 (JAEHYUN)  |  Horizon - NCT LAB</div>
+        </div>
+
+        
+        <div class="song-votes">재현의 목소리가 오늘 날씨와 딱 어울려요!</div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <img src="loveblossom.jpg" class="song-image">
+        </div>
+
+        
+        <div class="song-info">
+            <div class="song-title">Love Blossom (러브블러썸) </div>
+            <div class="song-meta">케이윌 (K.Will)  |  The 3rd Album Part.2 'Love Blossom (러브블러썸)' </div>
+        </div>
+
+        
+        <div class="song-votes">라디오에서 오랜만에 듣고 다시 플레이리스트에 넣었어요.</div>
+    </div>
+
+    <div class="song-card">
+        <div>
+            <img src="attention.jpg" class="song-image">
+        </div>
+
+        
+        <div class="song-info">
+            <div class="song-title">Attention</div>
+            <div class="song-meta">NewJeans  |  NewJeans 1st EP 'New Jeans'</div>
+        </div>
+
+        
+        <div class="song-votes">날씨가 더워져서 들었어요. 여름하면 가장 먼저 떠오르는 곡!</div>
+    </div>
+
+    <div class="des">
+        <h2>🎵 오늘의 추천곡을 입력해주세요. </h2>
+        <h4> 노래 - 가수 - 이유 형태로 입력해주세요. </h4>
+        <form action="">
+            <textarea cols="120" rows="5"></textarea><br>
+            <button type="submit">입력</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h5>Copyright by PLLI Archive All Rights Reserved.</h5>
+    </div>
+</body>
+</html>

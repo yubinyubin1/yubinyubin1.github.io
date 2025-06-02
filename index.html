@@ -3,110 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>엔시티 위시 (NCT WISH) - 미니앨범 2집 : poppop</title>
+    <title>PLLI Archive</title>
     <style>
-        #menu li{
-            display: inline;
-            font-size: 20px;
+        *{
+            box-sizing: border-box;
         }
-        #menu li a{
-            text-decoration: none;
-            color: rgb(248, 105, 129);
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        #menu li a:visited{
-            color: purple;
-        } 
-        #menu li a:hover{
-            color: rgb(238, 182, 182);
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        h2{
-            margin-top: 70px;
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        h5 {
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-            color: grey;
-            margin-bottom: 70px;
-            border-bottom: solid 2px #f7b7b7;
-            padding-bottom: 20px;
-            width: 50%;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-left: auto; /* 왼쪽 여백 자동 */
-            margin-right: auto; /* 오른쪽 여백 자동 */
-}
 
-        ul{
-            list-style-type: none;
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .header{
+            padding: 30px;
             text-align: center;
-            display: inline-block;
-            margin: 0 130px;
+            background: white;
+            margin: 30px;
         }
-        .subject{
+        .header h1{
+            font-size: 50px;
+        }
+        .des{
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            margin: 30px;
+        }
+        .des span{
+            color: #1fa0cf;
             font-weight: bold;
+            font-size: 25px;
         }
-        .comment{
-            color: grey;
-            text-decoration: line-through ;
+        
+        .leftcolumn{
+            float: left;
+            width: 33%;
         }
-        .price{
-            color: red;
-            font-weight: bold;
+
+        .center{
+            float: left;
+            width: 33%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .rightcolumn{
+            float: left;
+            width: 33%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .left{
+            float: left;
+            width: 50%;
+        }
+        
+        .right{
+            float: left;
+            width: 50%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card{
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            color: #888888;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .center, .rightcolumn, .left, .right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="border_radius.html">border_radius</a></li>
-        <li><a href="border.html">border</a></li>
-        <li><a href="chicken.html">chicken(inline)</a></li>
-        <li><a href="chicken_int.html">chicken(internal)</a></li>
-        <li><a href="margin.html">margin</a></li>
-        <li><a href="padding.html">padding</a></li>
-        <li><a href="various_border.html">various_border</a></li>
-    </ul>
-    <h2>엔시티 위시 (NCT WISH) - 미니앨범 2집 : poppop</h2>
-    <h5>이미지를 누르면 구매 페이지로 이동합니다.</h5>
-    <table>
-        <tr>
-            <td>
-                <ul>
-                    <li><a href="https://www.yes24.com/product/goods/143876040"><img src="pp_wichu.jpg" width="150" height="150"></a></li>
-                    <li><br></li>
-                    <li class="subject">엔시티 위시 (NCT WISH)</li>
-                    <li class="subject">미니앨범 2집 : poppop [WICHU Ver.]</li>
-                    <li class="comment">45,800원</li>
-                    <li class="price">37,100원</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="https://www.yes24.com/product/goods/143875443"><img src="pp_photobook.jpg" width="150" height="150"></a></li>
-                    <li><br></li>
-                    <li class="subject">엔시티 위시 (NCT WISH)</li>
-                    <li class="subject">미니앨범 2집 : poppop [Photobook Ver.]</li>
-                    <li class="comment">22,000원</li>
-                    <li class="price">17,800원</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="https://www.yes24.com/product/goods/143875887"><img src="pp_jewel.jpg" width="150" height="150"></a></li>
-                    <li><br></li>
-                    <li class="subject">엔시티 위시 (NCT WISH)</li>
-                    <li class="subject">미니앨범 2집 : poppop [Jewel Case Ver.]</li>
-                    <li class="comment">16,500원</li>
-                    <li class="price">13,400원</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <div class="header">
+        <h1>♬ 플리 아카이브 ♪</h1>
+        <h2>PLLI Archive</h2>
+        <p>다양한 상황에 맞는 곡을 확인해보세요!</p>
+    </div>
+
+    <div class="des">
+        <h3>각 탭을 클릭해 상황/날씨/감정별로 어울리는 곡을 확인해보세요. <br><br>
+            <span>마음에 드는 곡이 없다면?</span> 직접 카테고리에 맞는 곡을 추가해 플레이리스트를 완성해보세요!
+
+        </h3>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>상황별</h2>
+                <h5>등굣길 / 산책 / 운동</h5>
+                <a href="subpage1.html"><img src="1.jpg" alt="추천 이미지" style="width:100%; height:200px; object-fit:cover;"></a>
+                
+            </div>
+        </div>
+        <div class="center">
+            <div class="card">
+                <h2>날씨별</h2>
+                <h5>비 오는 날 / 맑은 날 / 눈 오는 날</h5>
+                <a href="subpage2.html"><img src="2.jpg" alt="추천 이미지" style="width:100%; height:200px; object-fit:cover;"></a>
+                
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>감정별</h2>
+                <h5>설렘 / 응원 / 신남</h5>
+                <a href="subpage3.html"><img src="3.jpg" alt="추천 이미지" style="width:100%; height:200px; object-fit:cover;"></a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="left">
+             <div class="card">
+                <h2>추천하기</h2>
+                <h5>오늘의 추천곡 / 카테고리 추천</h5>
+                <a href="subpage4.html"><img src="4.jpg" alt="추천 이미지" style="width:100%; height:200px; object-fit:cover;"></a>
+
+            </div>
+        </div>
+        <div class="right">
+             <div class="card">
+                <h2>음악편지</h2>
+                <h5>음악으로 마음을 전해보세요!</h5>
+                <a href="subpage5.html"><img src="5.jpg" alt="추천 이미지" style="width:100%; height:200px; object-fit:cover;"></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h5>Copyright by PLLI Archive All Rights Reserved.</h5>
+    </div>
 </body>
 </html>
